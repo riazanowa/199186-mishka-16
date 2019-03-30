@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ekaterina Ryazanova](https://up.htmlacademy.ru/adaptive/16/user/199186).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Пасунько](https://up.htmlacademy.ru/adaptive/16/user/702351)..
 
 ---
 
