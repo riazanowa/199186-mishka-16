@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="#" width="226" height="50"
+        alt="Мишка - интернет-магазин милых штучек ручной работы для дома">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
+      <div class="main-nav-wrapper">
+        <ul class="main-nav__list main-menu">
+          <li class="main-menu__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-page">
+    <h1> Каталог товаров</h1>
+    <section class="catalog">
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <article class="catalog__item--hare hare-product">
+            <div class="hare-product__image-wrapper">
+              <img class="hare-product__image" src="#" width="0" height="0" alt="Зайчик-попрыгайчик">
+            </div>
+            <p class="">Рост 30 см, вес 200 г</p>
+            <p class="">1 200 руб.</p>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article catalog__item--basket></article>
+        </li>
+        <li class="catalog__item">
+          <article class="catalog__item--toy-basket basket-product">
+            <div class="basket-product__image-wrapper">
+              <img class="basket-product__image" src="#" width="0" height="0" alt="Корзинка для белья">
+            </div>
+            <p class="basket-product__size">Диаметр 15 см, высота 10 см</p>
+            <p class="basket-product__price">690 руб.</p>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="catalog__item--toy-basket toy-basket-product">
+            <div class="toy-basket-product__image-wrapper">
+              <img class="toy-basket-product__image" src="#" width="0" height="0" alt="Большая корзинка
+                  для игрушек">
+            </div>
+            <p class="toy-basket-product__size">Диаметр 30 см, высота 30 см</p>
+            <p class="toy-basket-product__price">1 500 руб.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section class="producing-process">
+      <h2 class="producing-process__title">Процесс производства</h2>
+      <div class="producing-process__video-wrapper">
+        <!--Место для видео-->
+      </div>
+      <p class="producing-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары.</p>
+      <button class="producing-process__button order-button" type="button">Сделать заказ</button>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__footer"></div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Мы в Инстаграмме!</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Мы в Фейсбук!</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Мы в Твиттер!</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text"></b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+
+  <section class="modal order-modal">
+    <b class="order__instructions">Добавить в корзину</b>
+    <form class="order__form" action="https://echo.htmlacademy.ru" method="get"></form>
+    <ul class="order__filter size-filter">
+      <li class="size-filter__option">
+        <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="S"
+          id="S-size">
+        <label for="S-size">S</label>
+      </li>
+      <li class="filter__option">
+        <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="M"
+          id="M-size">
+        <label for="M-size">M</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="L"
+          id="L-size">
+        <label for="L-size">L</label>
+      </li>
+    </ul>
+    <button class="filter-button botton" type="submit">Добавить</button>
+    </form>
+  </section>
+
+</body>
+<html>
