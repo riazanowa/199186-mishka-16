@@ -23,6 +23,8 @@
           <li class="main-menu__item">
             <a href="#">Вязание на заказ</a>
           </li>
+        </ul>
+        <ul class="main-nav__list main-menu">
           <li class="main-menu__item">
             <a href="#">Поиск по сайту</a>
           </li>
@@ -37,39 +39,28 @@
   <main class="main-page">
     <h1> Каталог товаров</h1>
     <section class="catalog">
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <article class="catalog__item--hare hare-product">
-            <div class="hare-product__image-wrapper">
-              <img class="hare-product__image" src="#" width="0" height="0" alt="Зайчик-попрыгайчик">
+          <article class="catalog__item product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="#" width="0" height="0" alt="Зайчик-попрыгайчик">
             </div>
-            <p class="">Рост 30 см, вес 200 г</p>
-            <p class="">1 200 руб.</p>
+            <p class="product__size">Рост 30 см, вес 200 г</p>
+            <p class="product__price">1 200 руб.</p>
           </article>
-        </li>
-        <li class="catalog__item">
-          <article catalog__item--basket></article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__item--toy-basket basket-product">
-            <div class="basket-product__image-wrapper">
-              <img class="basket-product__image" src="#" width="0" height="0" alt="Корзинка для белья">
+          <article class="catalog__item product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="#" width="0" height="0" alt="Корзинка для белья">
             </div>
-            <p class="basket-product__size">Диаметр 15 см, высота 10 см</p>
-            <p class="basket-product__price">690 руб.</p>
+            <p class="product__size">Диаметр 15 см, высота 10 см</p>
+            <p class="product__price">690 руб.</p>
           </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__item--toy-basket toy-basket-product">
-            <div class="toy-basket-product__image-wrapper">
-              <img class="toy-basket-product__image" src="#" width="0" height="0" alt="Большая корзинка
+          <article class="catalog__item product">
+            <div class="product__image-wrapper">
+              <img class="product__image" src="#" width="0" height="0" alt="Большая корзинка
                   для игрушек">
             </div>
-            <p class="toy-basket-product__size">Диаметр 30 см, высота 30 см</p>
-            <p class="toy-basket-product__price">1 500 руб.</p>
+            <p class="product__size">Диаметр 30 см, высота 30 см</p>
+            <p class="product__price">1 500 руб.</p>
           </article>
-        </li>
-      </ul>
     </section>
     <section class="producing-process">
       <h2 class="producing-process__title">Процесс производства</h2>
@@ -78,11 +69,10 @@
       </div>
       <p class="producing-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары.</p>
-      <button class="producing-process__button order-button" type="button">Сделать заказ</button>
+      <button class="producing-process__button order-button button" type="button">Сделать заказ</button>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__footer"></div>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -97,32 +87,32 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text"></b>
+      <b class="copyright__text">Разработано</b>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 
   <section class="modal order-modal">
     <b class="order__instructions">Добавить в корзину</b>
-    <form class="order__form" action="https://echo.htmlacademy.ru" method="get"></form>
-    <ul class="order__filter size-filter">
-      <li class="size-filter__option">
-        <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="S"
-          id="S-size">
-        <label for="S-size">S</label>
-      </li>
-      <li class="filter__option">
-        <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="M"
-          id="M-size">
-        <label for="M-size">M</label>
-      </li>
-      <li class="filter-option">
-        <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="L"
-          id="L-size">
-        <label for="L-size">L</label>
-      </li>
-    </ul>
-    <button class="filter-button botton" type="submit">Добавить</button>
+    <form class="order__form" action="https://echo.htmlacademy.ru" method="get">
+      <ul class="size-filter__list">
+        <li class="size-filter__option">
+          <label>
+            <input class="visually-hidden size-filter__radio" type="radio" name="size" value="S" id="S-size">
+          </label>
+        </li>
+        <li class="size-filter__option">
+          <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="M"
+            id="M-size">
+          <label for="M-size">M</label>
+        </li>
+        <li class="size-filter__option">
+          <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="L"
+            id="L-size">
+          <label for="L-size">L</label>
+        </li>
+      </ul>
+      <button class="size-filter__button button" type="submit">Добавить</button>
     </form>
   </section>
 

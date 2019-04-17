@@ -22,6 +22,8 @@
           <li class="main-menu__item">
             <a href="#">Вязание на заказ</a>
           </li>
+        </ul>
+        <ul class="main-nav__list main-menu">
           <li class="main-menu__item">
             <a href="#">Поиск по сайту</a>
           </li>
@@ -58,32 +60,32 @@
           <legend class="color-filter__title">Тип</legend>
           <ul class="color-filter__list">
             <li class="color-filter__option">
-              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color"
+              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
                 value="white" id="white" checked>
               <label for="white">Белый</label>
             </li>
             <li class="color-filter__option">
-              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color"
+              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
                 value="grey" id="grey" checked>
               <label for="grey">Серый</label>
             </li>
             <li class="color-filter__option">
-              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color"
+              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color]"
                 value="tiffany" id="tiffany">
               <label for="tiffany">Тиффани</label>
             </li>
             <li class="color-filter__option">
-              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color"
+              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="[color]"
                 value="black" id="black">
               <label for="black">Черный</label>
             </li>
             <li class="color-filter__option">
-              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color"
+              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="[color]"
                 value="pink" id="pink">
               <label for="pink">Розовый</label>
             </li>
             <li class="color-filter__option">
-              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color"
+              <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="[color]"
                 value="orange" id="orange">
               <label for="orange">Оранжевый</label>
             </li>
@@ -109,7 +111,7 @@
         <fieldset class="fullorder__phone phone-field">
           <legend class="phone-field__title">Тел</legend>
           <label class="visually-hidden" for="phone-field">телeфон</label>
-          <input type="text"" name=" phone" id="phone-name-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input type="text" name="phone" id="phone-name-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
         <fieldset class="fullorder__email email-field">
           <legend class="email-field__title">E-mail</legend>
