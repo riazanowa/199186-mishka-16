@@ -14,7 +14,6 @@
               alt="Мишка - интернет-магазин милых штучек ручной работы для дома">
           </a>
       <button class="main-nav__toggle">Открыть меню</button>
-      <div class="main-nav-wrapper">
         <ul class="main-nav__list main-menu">
           <li class="main-menu__item">
             <a href="#">Каталог товаров</a>
@@ -31,72 +30,71 @@
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
   <main class="form-page">
     <h1 class="form-page__title">Вязание на заказ</h1>
-    <section class="form-page__form  order-fullform">
-      <p class="order-fullform__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+    <section class="form-page__form  fullorder">
+      <p class="fullorder__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="fullorder__form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="fullorder__type-filter">
+        <fieldset class="fullorder__filter  type-filter">
           <legend class="type-filter__title">Тип</legend>
           <ul class="type-filter__list">
             <li class="type-filter__option">
-              <input class="visually-hidden filter__input filter__input--radio" type="radio" name="type"
+              <input class="visually-hidden filter__input--radio" type="radio" name="type"
                 value="for-interior" id="interior" checked>
               <label for="interior">Аксессуар для интерьера</label>
             </li>
             <li class="type-filter__option">
-              <input class="visually-hidden filter__input filter__input--radio" type="radio" name="type" value="toy"
+              <input class="visually-hidden filter__input--radio" type="radio" name="type" value="toy"
                 id="toy">
               <label for="toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="fullorder__color-filter color-filter">
+        <fieldset class="fullorder__filter color-filter">
           <legend class="color-filter__title">Тип</legend>
           <ul class="color-filter__list">
             <li class="color-filter__option">
               <label>
-                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
+                <input class="visually-hidden filter__input--checkbox" type="checkbox" name="color[]"
                   value="white" checked>
                 Белый
               </label>
             </li>
             <li class="color-filter__option">
               <label>
-                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
+                <input class="visually-hidden filter__input--checkbox" type="checkbox" name="color[]"
                   value="grey" checked>
                 Серый
               </label>
             </li>
             <li class="color-filter__option">
               <label>
-                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
+                <input class="visually-hidden filter__input--checkbox" type="checkbox" name="color[]"
                   value="tiffany">
                 Тиффани
               </label>
             </li>
             <li class="color-filter__option">
               <label>
-                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
+                <input class="visually-hidden filter__input--checkbox" type="checkbox" name="color[]"
                   value="black">
                 Черный
               </label>
             </li>
             <li class="color-filter__option">
               <label>
-                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
+                <input class="visually-hidden filter__input--checkbox" type="checkbox" name="color[]"
                   value="pink">
                 Розовый
               </label>
             </li>
             <li class="color-filter__option">
               <label>
-                <input class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="color[]"
+                <input class="visually-hidden  filter__input--checkbox" type="checkbox" name="color[]"
                   value="orange">
                 Оранжевый
               </label>
