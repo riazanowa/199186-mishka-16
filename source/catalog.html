@@ -15,7 +15,6 @@
           alt="Мишка - интернет-магазин милых штучек ручной работы для дома">
       </a>
       <button class="main-nav__toggle">Открыть меню</button>
-      <div class="main-nav-wrapper">
         <ul class="main-nav__list main-menu">
           <li class="main-menu__item">
             <a href="#">Каталог товаров</a>
@@ -32,7 +31,6 @@
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
@@ -92,29 +90,32 @@
     </div>
   </footer>
 
-  <section class="modal order-modal order">
-    <b class="order__instructions">Добавить в корзину</b>
-    <form class="order__form" action="https://echo.htmlacademy.ru" method="get">
-      <ul class="size-filter__list">
-        <li class="size-filter__option">
-          <label>
-            <input class="visually-hidden size-filter__radio" type="radio" name="size" value="S" id="S-size">
-          </label>
-        </li>
-        <li class="size-filter__option">
-          <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="M"
-            id="M-size">
-          <label for="M-size">M</label>
-        </li>
-        <li class="size-filter__option">
-          <input class="visually-hidden size-filter__input size-filter__input-radio" type="radio" name="size" value="L"
-            id="L-size">
-          <label for="L-size">L</label>
-        </li>
-      </ul>
-      <button class="size-filter__button button" type="submit">Добавить</button>
-    </form>
-  </section>
+  <section class="modal order">
+      <b class="order__instructions">Добавить в корзину</b>
+      <form class="order__form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="size-filter__list">
+          <li class="size-filter__option">
+            <label>
+              <input class="visually-hidden size-filter__input-radio" type="radio" name="size" value="S">
+              S
+            </label>
+          </li>
+          <li class="size-filter__option">
+            <label>
+              <input class="visually-hidden size-filter__input-radio" type="radio" name="size" value="M">
+              M
+            </label>
+          </li>
+          <li class="size-filter__option">
+            <label for="L-size">
+              <input class="visually-hidden size-filter__input-radio" type="radio" name="size" value="L">
+              L
+            </label>
+          </li>
+        </ul>
+        <button class="size-filter__button button" type="submit">Добавить</button>
+      </form>
+    </section>
 
 </body>
 <html>
