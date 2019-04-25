@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <nav class="main-nav">
+      <a class="page-header__logo"  href="index.html">
+        <img class="page-header__logo-image" src="#" width="226" height="50"
+          alt="Мишка - интернет-магазин милых штучек ручной работы для дома">
+      </a>
+      <button class="main-nav__toggle">Открыть меню</button>
+        <ul class="main-nav__list main-menu">
+          <li class="main-menu__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-menu">
+          <li class="main-menu__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="main-page">
+    <h1> Каталог товаров</h1>
+    <section class="catalog">
+      <article class="catalog__item product">
+        <div class="product__image-wrapper">
+          <img class="product__image" src="#" width="0" height="0" alt="Зайчик-попрыгайчик">
+        </div>
+        <p class="product__size">Рост 30 см, вес 200 г</p>
+        <p class="product__price">1 200 руб.</p>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-wrapper">
+          <img class="product__image" src="#" width="0" height="0" alt="Корзинка для белья">
+        </div>
+        <p class="product__size">Диаметр 15 см, высота 10 см</p>
+        <p class="product__price">690 руб.</p>
+      </article>
+      <article class="catalog__item product">
+        <div class="product__image-wrapper">
+          <img class="product__image" src="#" width="0" height="0" alt="Большая корзинка
+                  для игрушек">
+        </div>
+        <p class="product__size">Диаметр 30 см, высота 30 см</p>
+        <p class="product__price">1 500 руб.</p>
+      </article>
+    </section>
+    <section class="producing-process">
+      <h2 class="producing-process__title">Процесс производства</h2>
+      <div class="producing-process__video-wrapper">
+        <!--Место для видео-->
+      </div>
+      <p class="producing-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары.</p>
+      <button class="producing-process__button order-button button" type="button">Сделать заказ</button>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Мы в Инстаграмме!</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Мы в Фейсбук!</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">Мы в Твиттер!</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+
+  <section class="modal order">
+      <b class="order__instructions">Добавить в корзину</b>
+      <form class="order__form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="size-filter">
+          <li class="size-filter__option">
+            <label>
+              <input class="visually-hidden size-filter__input-radio" type="radio" name="size" value="S">
+              S
+            </label>
+          </li>
+          <li class="size-filter__option">
+            <label>
+              <input class="visually-hidden size-filter__input-radio" type="radio" name="size" value="M">
+              M
+            </label>
+          </li>
+          <li class="size-filter__option">
+            <label for="L-size">
+              <input class="visually-hidden size-filter__input-radio" type="radio" name="size" value="L">
+              L
+            </label>
+          </li>
+        </ul>
+        <button class="size-filter__button button" type="submit">Добавить</button>
+      </form>
+    </section>
+
+</body>
+<html>
